@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music World with Rashmiranjan</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('back_ground2.jpeg'); /* Replace with your actual image path */
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    nav button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .submenu {
+      display: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .submenu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .submenu li {
+      margin: 0.5rem 0;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 0 2rem;">
+          <!-- Left side: Photo + Info -->
+          <div style="display: flex; align-items: center; gap: 1rem;">
+            <img src="my_pic_with_guitar.jpeg" alt="Rashmiranjan Photo" style="width: 200px; height: 200px; border-radius: 50%;">
+            <div>
+              <div style="font-size: 3rem;">Welcome to the World of Music</div>
+              <div style="font-size: 2rem; margin-top: 0.3rem;">
+                📧 rashmiranjanbhutia07@gmail.com<br>
+                📞 +91-8328924279
+              </div>
+            </div>
+          </div>
+      
+          <!-- Right side: YouTube link with SVG Logo -->
+          <div style="font-size: 1.2rem; text-align: right;">
+            <a href="https://www.youtube.com/@Mr.R.Bhutia/shorts" target="_blank" style="color: white; text-decoration: none;">
+              <img src="youtube.png" alt="YouTube Logo" style="width: 54px; height: 54px; vertical-align: middle; margin-right: 8px;">
+              YouTube
+            </a>
+          </div>
+          
+      </header>
+               
+  <nav>
+    <button onclick="toggleSubmenu('instruments')">Instruments</button>
+    <button>Mix and Mastering</button>
+    <button>Lyrics Writing</button>
+    <button>Sound Engineering</button>
+    <button>Computer Music</button>
+  </nav>
+
+  <div id="instruments" class="submenu">
+    <ul>
+        <li style="font-size: 4.2rem;">Vocal</li>
+        <li style="font-size: 4.2rem;">Guitar</li>
+      <li style="font-size: 4.2rem;">Keyboard</li>
+      <li style="font-size: 4.2rem;">Flute</li>
+      <li style="font-size: 4.2rem;">Violin</li>
+      <li style="font-size: 4.2rem;">Tabla</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleSubmenu(id) {
+      const submenu = document.getElementById(id);
+      submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
